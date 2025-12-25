@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple GET Request Sender</title>
+  <title>Send notification to my phone</title>
 </head>
 <body>
 
-  <h2>Send Text via GET Request</h2>
+  <h2>Send what you want the notification to say</h2>
 
   <input type="text" id="userInput" placeholder="Enter text" />
   <button onclick="sendRequest()">Send</button>
@@ -15,7 +15,7 @@
 
   <script>
     function sendRequest() {
-      const baseString = "https://example.com/api?data=";
+      const baseString = "https://trigger.macrodroid.com/7f9096bb-4701-4975-b694-4fa9837dbe85/letothercontactme?msg=";
       const input = document.getElementById("userInput").value;
 
       // Encode input to be URL-safe
